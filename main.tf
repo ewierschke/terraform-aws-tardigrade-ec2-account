@@ -8,7 +8,7 @@ resource "aws_ebs_default_kms_key" "this" {
 }
 
 resource "aws_ebs_snapshot_block_public_access" "this" {
-  count = var.ec2_account.ebs_snapshot_block_public_access != null ? 1 : 0
+  count = var.ec2_account.disable_ebs_snapshot_block_public_access == null ? 1 : 0
 
   state = var.ec2_account.ebs_snapshot_block_public_access.state
 }

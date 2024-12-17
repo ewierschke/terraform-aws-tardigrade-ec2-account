@@ -10,6 +10,10 @@ variable "ec2_account" {
       state = optional(string, "block-all-sharing")
     }), {})
 
+    disable_ebs_snapshot_block_public_access = optional(object({
+      state = optional(string)
+    }), null)
+
     image_block_public_access = optional(object({
       state = optional(string, "block-new-sharing")
     }), {})
