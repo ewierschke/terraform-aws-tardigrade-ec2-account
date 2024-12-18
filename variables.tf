@@ -26,7 +26,7 @@ variable "ec2_account" {
 
     instance_metadata_defaults_http_tokens = optional(string, "no-preference")
 
-    instance_metadata_defaults_http_put_response_hop_limit = optional(integer, -1)
+    instance_metadata_defaults_http_put_response_hop_limit = optional(number, -1)
 
     instance_metadata_defaults_instance_metadata_tags = optional(string, "no-preference")
   })
