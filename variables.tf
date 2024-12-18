@@ -21,6 +21,14 @@ variable "ec2_account" {
     serial_console_access = optional(object({
       enabled = optional(bool, false)
     }))
+
+    instance_metadata_defaults_http_endpoint = optional(string, "no-preference")
+
+    instance_metadata_defaults_http_tokens = optional(string, "no-preference")
+
+    instance_metadata_defaults_http_put_response_hop_limit = optional(integer, -1)
+
+    instance_metadata_defaults_instance_metadata_tags = optional(string, "no-preference")
   })
   default  = {}
   nullable = false

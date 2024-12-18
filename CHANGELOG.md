@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+### [1.3.0](https://github.com/plus3it/terraform-aws-tardigrade-ec2-account/releases/tag/1.2.1)
+
+**Released**: 2024.12.18
+
+**Summary**:
+
+*   Adds aws_ec2_instance_metadata_defaults
+
+
 ### [1.2.1](https://github.com/plus3it/terraform-aws-tardigrade-ec2-account/releases/tag/1.2.1)
 
 **Released**: 2024.12.17
